@@ -1,7 +1,7 @@
 # Some big little Softwares 
 
 
-### VyprVPN Server	   Hostname	   IP Address*
+### VyprVPN Server	 / Hostname	  /   IP Address*
 
 US - Los Angeles, CA	us1.vpn.goldenfrog.com	209.99.67.119
 
