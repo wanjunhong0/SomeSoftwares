@@ -5,14 +5,22 @@
 1. Open Network and Sharing Center in the Control Panel.  
 * Click **Start**, then **Control Panel**
 * Click on **View Network status and Tasks**
-2. Click **Setup a new connection or network**.    
-3. Choose **Connect to a workplace** then **Next**.    
+2. Click **Setup a new connection or network**.   
+
+3. Choose **Connect to a workplace** then **Next**.  
+
 4. Click **Use my Internet Connection (VPN)**.    
+
 5. Enter the desired VPN server address in the **Internet address** field. View the server addresses below.  
+
 6. Type **VyprVPN** in the **Destination name**: field.  
+
 7. Check **Don't connect now** then **Next**.  
+
 8. Type in your Golden Frog **Login (e-mail address)** and **Password** in their respective fields; leave Domain blank.  
+
 9. Check **Remember this password**, and Click **Create**.  
+
 10. Click **Close**.  
 
 ### PPTP setup on WIN10
