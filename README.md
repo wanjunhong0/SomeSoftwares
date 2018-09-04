@@ -3,17 +3,17 @@
 ### PPTP setup on WIN7
 
 1. Open Network and Sharing Center in the Control Panel
-* Click Start, then Control Panel
-* Click on View Network status and Tasks
-2. Click Setup a new connection or network  
-3. Choose Connect to a workplace then Next  
-4. Click Use my Internet Connection (VPN)  
-5. Enter the desired VPN server address in the Internet address field. View the server addresses here.
-6. Type VyprVPN in the Destination name: field
-7. Check Don't connect now then Next
-8. Type in your Golden Frog Login (e-mail address) and Password in their respective fields; leave Domain blank
-9. Check Remember this password, and Click Create.
-10. Click Close
+* Click **Start**, then **Control Panel**
+* Click on **View Network status and Tasks**
+2. Click **Setup a new connection or network**  
+3. Choose **Connect to a workplace** then **Next**  
+4. Click **Use my Internet Connection (VPN)**  
+5. Enter the desired VPN server address in the **Internet address** field. View the server addresses below.
+6. Type **VyprVPN** in the **Destination name**: field
+7. Check **Don't connect now** then **Next**
+8. Type in your Golden Frog **Login (e-mail address)** and **Password** in their respective fields; leave Domain blank
+9. Check **Remember this password**, and Click **Create**.
+10. Click **Close**
 
 
 ### VyprVPN Server	 / Hostname	  /   IP Address*
@@ -27,7 +27,7 @@ US - Chicago, IL	/ us6.vpn.goldenfrog.com	/ 209.99.93.110
 US - San Francisco, CA	/ us7.vpn.goldenfrog.com	/ 209.99.95.158  
 US - Seattle, WA	/ us8.vpn.goldenfrog.com	/ 209.99.94.117  
 Canada - Toronto	/ ca1.vpn.goldenfrog.com	/ 209.99.21.107  
-Netherlands - / Amsterdam	eu1.vpn.goldenfrog.com	/ 128.90.96.159  
+Netherlands - Amsterdam	/ eu1.vpn.goldenfrog.com	/ 128.90.96.159  
 Denmark - Copenhagen	/ dk1.vpn.goldenfrog.com	/ 128.90.96.183  
 Sweden - Stockholm	/ se1.vpn.goldenfrog.com	/ 128.90.96.239  
 Hong Kong - Hong Kong	/ hk1.vpn.goldenfrog.com	/ 128.90.58.92  
