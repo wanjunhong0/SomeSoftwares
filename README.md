@@ -15,6 +15,27 @@
 9. Check **Remember this password**, and Click **Create**.
 10. Click **Close**
 
+### PPTP setup on WIN10
+
+1. Click on the **Start** menu.
+2. Click on **Settings**.
+3. Click **Network & Internet** from the Settings menu.
+4. Select **VPN** from the left side of the window.
+5. Click **Add a VPN connection**.
+6. Fill out the settings listed in the box below.
+
+           VPN provider: Windows (built-in)
+           Connection Name: VyprVPN
+           Server name or address: See server list
+           VPN type: Point to Point Tunneling Protocol (PPTP)
+           Type of sign-in info: User name and password
+           User name (optional): Your Golden Frog email address
+           Password (optional): Your Golden Frog password
+           Remember my sign-in info: Checked
+
+7. Click **Save**.
+8. You will now see the connection in the **Network & Internet** window.
+
 
 ### VyprVPN Server	 / Hostname	  /   IP Address*
 
