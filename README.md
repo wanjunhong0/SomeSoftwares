@@ -26,10 +26,15 @@
 ### PPTP setup on WIN10
 
 1. Click on the **Start** menu.
+
 2. Click on **Settings**.
+
 3. Click **Network & Internet** from the Settings menu.
+
 4. Select **VPN** from the left side of the window.
+
 5. Click **Add a VPN connection**.
+
 6. Fill out the settings listed in the box below.
 
            VPN provider: Windows (built-in)
@@ -42,7 +47,29 @@
            Remember my sign-in info: Checked
 
 7. Click **Save**.
+
 8. You will now see the connection in the **Network & Internet** window.
+
+### PPTP setup on MAC OS X 10.8+
+
+1. Open Network settings in System Preferences.
+* Click the **Apple** then **System Preferences**
+* Click **Network** under Internet & Wireless
+2. Click + (the plus icon).
+
+3. Select **VPN** for the interface, **PPTP** for the VPN Type, and enter **VyprVPN** for Service Name. Then click **Create**.
+
+4. Select the newly created **VyprVPN** connection.
+
+5. Enter one of our server addresses in the Server Address field. View the list of servers here.
+
+6. Type your Golden Frog **Login (e-mail address)** in the Account Name field.
+
+7. Click **Authentication Settings** and enter your Golden Frog **Password** in the Password field, then click **OK**.
+
+8. Click **Advanced**, check **Send all traffic over VPN connection**, then click **OK**.
+
+9. Click **Apply**.
 
 
 ### VyprVPN Server	 / Hostname	  /   IP Address*
