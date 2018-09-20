@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)https://support.goldenfrog.com/hc/en-us/articles/360004672911-VyprVPN-L2TP-IPSec-VPN-Setup-for-Windows-10 -->
+<html dir="ltr" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <!-- v14606 -->
+
+  <title>VyprVPN L2TP/IPSec VPN Setup for Windows 10 – Golden Frog Support</title>
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="YLA8NLTtA3hImSZ3TFwZzwbBamEhWFesrrL/KqwuJc0pYHcnNScWRvTlkVXQ/unorb2qnYXcSrVLawzmMRZHuA==">
+  <meta name="description" content="To add a necessary registry setting: 1. Press the Windows Key  and R at the same time to bring up the Run box. 2. Type in: regedit and..."><meta property="og:image" content="https://theme.zdassets.com/theme_assets/184654/625cd6540cc624520b169ff415e0357bcdcb2710.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Golden Frog Support">
+<meta property="og:title" content="VyprVPN L2TP/IPSec VPN Setup for Windows 10">
+<meta property="og:description" content="To add a necessary registry setting:
+1. Press the Windows Key  and R at the same time to bring up the Run box.
+2. Type in: regedit and click OK. Click Yes if asked if you&#39;d like to allow the app to...">
+<meta property="og:url" content="http://support.goldenfrog.com/hc/en-us/articles/360004672911-VyprVPN-L2TP-IPSec-VPN-Setup-for-Windows-10">
+<link rel="canonical" href="https://support.goldenfrog.com/hc/en-us/articles/360004672911-VyprVPN-L2TP-IPSec-VPN-Setup-for-Windows-10">
+<link rel="alternate" hreflang="de" href="https://support.goldenfrog.com/hc/de/articles/360004672911-VyprVPN-L2TP-IPSec-VPN-Installation-f%C3%BCr-Windows-10">
+<link rel="alternate" hreflang="en" href="https://support.goldenfrog.com/hc/en-us/articles/360004672911-VyprVPN-L2TP-IPSec-VPN-Setup-for-Windows-10">
+<link rel="alternate" hreflang="es" href="https://support.goldenfrog.com/hc/es/articles/360004672911-Configuraci%C3%B3n-de-la-VPN-VyprVPN-L2TP-IPSec-en-Windows-10">
+<link rel="alternate" hreflang="fr" href="https://support.goldenfrog.com/hc/fr/articles/360004672911-VyprVPN-L2TP-IPSec-VPN-param%C3%A9trage-pour-Windows-10">
+<link rel="alternate" hreflang="nl" href="https://support.goldenfrog.com/hc/nl/articles/360004672911-VyprVPN-L2TP-IPSec-VPN-Instelling-voor-Windows-10">
+<link rel="alternate" hreflang="pt" href="https://support.goldenfrog.com/hc/pt-br/articles/360004672911-Configura%C3%A7%C3%A3o-da-VPN-VyprVPN-L2TP-IPSec-para-Windows-10">
+<link rel="alternate" hreflang="tr" href="https://support.goldenfrog.com/hc/tr/articles/360004672911-VyprVPN-Windows-i%C3%A7in-L2TP-IPSec-VPN-Kurulumu">
+<link rel="alternate" hreflang="zh" href="https://support.goldenfrog.com/hc/zh-cn/articles/360004672911-%E5%9C%A8Windows10%E7%B3%BB%E7%BB%9F%E4%B8%8B%E8%AE%BE%E7%BD%AEVyprVPNL2TP-%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE%E5%AE%89%E5%85%A8-IPSec-VPN">
+
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+  <link rel="stylesheet" media="all" href="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/application-be7996635be623dcfc7e4f8f27ad7084.css" id="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/style.css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://theme.zdassets.com/theme_assets/184654/c329a529f4fa4061bcfa1d5d69d92ba15632fa46.png">
+
+  <!--[if lt IE 9]>
+  <script>
+    //Enable HTML5 elements for <IE9
+    'abbr article aside audio bdi canvas data datalist details dialog \
+    figcaption figure footer header hgroup main mark meter nav output \
+    progress section summary template time video'.replace(/\w+/g,function(n){document.createElement(n)});
+  </script>
+<![endif]-->
+
+  <script type="text/javascript" async="" src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/e76c696c-3a6e-4144-97fb-07ec8c993c11.js.下载"></script><script async="" src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/analytics.js.下载"></script><script src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/jquery-b60ddb79ff2563b75442a6bac88b00b5.js.下载"></script>
+  <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-119020107-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+  
+  
+
+  <script src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/helpcenter.js.下载"></script>
+<script>var cfaRules = [{"fieldType":"tagger","field":32202547,"value":"country_not_listed","select":[360010589771],"formId":360000153831,"requireds":[]},{"fieldType":"tagger","field":360004888912,"value":"technical_issue__can_t_connect","select":[360010589431],"formId":360000153831,"requireds":[]},{"fieldType":"tagger","field":360004888912,"value":"technical_issue__latency","select":[360010589431],"formId":360000153831,"requireds":[]}];</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- jQuery BxSlider -->
+<!-- FE-2042: Instruction slideshows are not working -->
+<link href="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/6e0ab329c3359aaef4c1198747e4928b6c08248e.css" rel="stylesheet">
+<link href="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/561597c8f936d34b2da6faeda30058fd24f78236.css" rel="stylesheet">
+
+<!-- jQuery UI -->
+<!-- ???: Can we defer load of these? -->
+<link rel="stylesheet" href="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/jquery-ui.css">
+<script src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/jquery-ui.js.下载"></script>
+<script type="text/javascript" src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/jquery.validate.min.js.下载"></script>
+
+<!-- SnapEngage Chat -->
+<!-- ???: May we defer load of these? -->
+<script type="text/javascript" src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/ec3c34cd2eb947cbdc92f29635edd03dac2f734f.js.下载"></script>
+
+  <script type="text/javascript" src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/script.js.下载"></script>
+<script src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/answerBot.js.下载"></script><script type="text/javascript" charset="utf-8" async="" src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/SubscriptionControls-f37bdc8c6d9e8814953b363b6d13acd4.js.下载"></script><script id="yui__dyn_0" type="text/javascript" src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/ServiceGetConfig"></script><script src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/f.txt"></script><script id="yui__dyn_1" type="text/javascript" src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/ServiceGetConfig(1)"></script></head>
+<body class="">
+  
+  
+
+
+  
+
+
+  <header class="header">
+  <nav class="header-inner product-nav product-nav-vypr">
+  <div class="container clearfix">
+    <a class="product-logo-vypr pull-left" href="https://www.goldenfrog.com/vyprvpn"><img src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/vypr_logo_167x47.png" alt="VyprVPN is the world&#39;s fastest VPN."></a>
+    <div id="product-nav-wrap" class="product-nav-wrap">
+      <div id="product-nav-main" class="product-nav-main clearfix">
+        <ul class="unstyled product-nav-links pull-left">
+          <li id="features-nav-item" class="iblock"><a href="https://www.goldenfrog.com/vyprvpn/features"><span>Features</span></a></li>
+          <li id="apps-nav-item" class="iblock"><a href="https://www.goldenfrog.com/vyprvpn/vpn-apps"><span>VPN Apps</span></a></li>
+          <li class="iblock"><a href="https://www.goldenfrog.com/vyprvpn/why-vpn"><span>Why Use a VPN?</span></a></li>
+          <li class="iblock"><a href="https://www.goldenfrog.com/vyprvpn/business"><span>Business</span></a></li>
+          <li class="iblock current-page"><a href="https://support.goldenfrog.com/hc"><span>Support</span></a></li>
+        </ul>
+        <ul class="unstyled product-nav-ctas pull-right">
+          <li class="iblock buy">
+            <a class="primary-button" href="https://www.goldenfrog.com/vyprvpn/buy-vpn">Try It Free</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a id="product-nav-toggle" class="product-nav-toggle gf-icon-font-hamburger-menu"><img src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/gf_hamburger_icon.png" alt="hamburger icon"></a>
+  </div>
+</nav>
+  <div class="container">
+    <nav class="user-nav header-sub-nav clearfix">
+      
+        <div class="dropdown language-selector" aria-haspopup="true">
+          <a class="dropdown-toggle">
+            English (US)
+          </a>
+          <span class="dropdown-menu dropdown-menu-end" role="menu">
+            
+              <a href="https://support.goldenfrog.com/hc/change_language/de?return_to=%2Fhc%2Fde%2Farticles%2F360004672911-VyprVPN-L2TP-IPSec-VPN-Installation-f%25C3%25BCr-Windows-10" dir="ltr" rel="nofollow" role="menuitem">
+                Deutsch
+              </a>
+            
+              <a href="https://support.goldenfrog.com/hc/change_language/es?return_to=%2Fhc%2Fes%2Farticles%2F360004672911-Configuraci%25C3%25B3n-de-la-VPN-VyprVPN-L2TP-IPSec-en-Windows-10" dir="ltr" rel="nofollow" role="menuitem">
+                Español
+              </a>
+            
+              <a href="https://support.goldenfrog.com/hc/change_language/fr?return_to=%2Fhc%2Ffr%2Farticles%2F360004672911-VyprVPN-L2TP-IPSec-VPN-param%25C3%25A9trage-pour-Windows-10" dir="ltr" rel="nofollow" role="menuitem">
+                Français
+              </a>
+            
+              <a href="https://support.goldenfrog.com/hc/change_language/nl?return_to=%2Fhc%2Fnl%2Farticles%2F360004672911-VyprVPN-L2TP-IPSec-VPN-Instelling-voor-Windows-10" dir="ltr" rel="nofollow" role="menuitem">
+                Nederlands
+              </a>
+            
+              <a href="https://support.goldenfrog.com/hc/change_language/pt-br?return_to=%2Fhc%2Fpt-br%2Farticles%2F360004672911-Configura%25C3%25A7%25C3%25A3o-da-VPN-VyprVPN-L2TP-IPSec-para-Windows-10" dir="ltr" rel="nofollow" role="menuitem">
+                Português do Brasil
+              </a>
+            
+              <a href="https://support.goldenfrog.com/hc/change_language/tr?return_to=%2Fhc%2Ftr%2Farticles%2F360004672911-VyprVPN-Windows-i%25C3%25A7in-L2TP-IPSec-VPN-Kurulumu" dir="ltr" rel="nofollow" role="menuitem">
+                Türkçe
+              </a>
+            
+              <a href="https://support.goldenfrog.com/hc/change_language/zh-cn?return_to=%2Fhc%2Fzh-cn%2Farticles%2F360004672911-%25E5%259C%25A8Windows10%25E7%25B3%25BB%25E7%25BB%259F%25E4%25B8%258B%25E8%25AE%25BE%25E7%25BD%25AEVyprVPNL2TP-%25E7%25BD%2591%25E9%2599%2585%25E5%258D%258F%25E8%25AE%25AE%25E5%25AE%2589%25E5%2585%25A8-IPSec-VPN" dir="ltr" rel="nofollow" role="menuitem">
+                简体中文
+              </a>
+            
+          </span>
+        </div>
+      
+      <a class="submit-a-request" href="https://support.goldenfrog.com/hc/en-us/requests/new">Submit a request</a>
+        <a class="login" data-auth-action="signin" role="button" href="https://support.goldenfrog.com/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.goldenfrog.com%2Fhc%2Fen-us%2Farticles%2F360004672911-VyprVPN-L2TP-IPSec-VPN-Setup-for-Windows-10&amp;locale=1">Sign in</a>
+
+    </nav>
+  </div>
+</header>
+
+  <main role="main">
+    <nav class="sub-nav sub-nav-far clearfix">
+  <ol class="breadcrumbs">
+  
+    <li title="Golden Frog Support">
+      
+        <a href="https://support.goldenfrog.com/hc/en-us">Golden Frog Support</a>
+      
+    </li>
+  
+    <li title="VyprVPN Manual Setup">
+      
+        <a href="https://support.goldenfrog.com/hc/en-us/categories/360000492171-VyprVPN-Manual-Setup">VyprVPN Manual Setup</a>
+      
+    </li>
+  
+    <li title="Windows 10">
+      
+        <a href="https://support.goldenfrog.com/hc/en-us/sections/360001262372-Windows-10">Windows 10</a>
+      
+    </li>
+  
+</ol>
+
+  <form role="search" class="search" data-search="" action="https://support.goldenfrog.com/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓"><input type="search" name="query" id="query" placeholder="Search" aria-label="Search">
+<input type="submit" name="commit" value="Search"></form>
+</nav>
+
+<div class="clearfix">
+
+  <article class="main-column">
+
+    <header class="article-header clearfix">
+      <h1> VyprVPN L2TP/IPSec VPN Setup for Windows 10</h1>
+      <!-- <div class="article-metadata">
+        <div class="article-avatar"><img src="https://secure.gravatar.com/avatar/6c265414ea6dc8270d99f07815fdae19?default=https%3A%2F%2Fassets.zendesk.com%2Fhc%2Fassets%2Fdefault_avatar.png&amp;r=g" alt="Avatar"/></div>
+        <div class="article-author">
+          Kelsey Hales
+        </div>
+        <div class="article-updated"><time datetime="2018-09-14T16:29:28Z" title="2018-09-14T16:29:28Z" data-datetime="calendar">September 14, 2018 16:29</time></div>
+      </div> 
+      <a class="article-subscribe" title="Opens a sign-in dialog" rel="nofollow" role="button" data-auth-action="signin" aria-selected="false" href="/hc/en-us/articles/360004672911-VyprVPN-L2TP-IPSec-VPN-Setup-for-Windows-10/subscription">Follow</a>-->
+    </header>
+
+    <div class="article-body">
+      <h2>To add a necessary registry setting:</h2>
+<p>1. Press the <strong>Windows Key </strong> and <strong>R</strong> at the same time to bring up the <strong>Run </strong>box.</p>
+<p>2. Type in: <strong>regedit</strong> and click <strong>OK</strong>. Click <strong>Yes</strong> if asked if you'd like to allow the app to make changes to your PC.</p>
+<p>3. In the left pane, locate and click the folder: <strong>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PolicyAgent</strong></p>
+<p>4. Click the <strong>Edit</strong> menu and hover your cursor over <strong>New</strong>. Click <strong>DWORD Value</strong>. A new registry will appear in the right pane, named <strong>New Value #1</strong>.</p>
+<p>5. Rename that file: <strong>AssumeUDPEncapsulationContextOnSendRule </strong>(this is case-sensitive and contains no spaces) and press <strong>ENTER</strong>.</p>
+<p>6. Right-click <strong>AssumeUDPEncapsulationContextOnSendRule</strong>, then click <strong>Modify</strong>.</p>
+<p>7. In the <strong>Value data</strong> box, type <strong>2</strong> and click <strong>OK</strong>.</p>
+<p>8. Reboot the computer.</p>
+<p>&nbsp;</p>
+<h2>To configure the Golden Frog certificate:</h2>
+<p>Installation of the Golden Frog Certificate requires administrative privileges on your computer.</p>
+<p>1. <a href="https://www.goldenfrog.website/downloads/goldenfrog-client.p12">Download the certificate</a> and save it.</p>
+<p>2. Press the <strong>Windows Key </strong> and <strong>R</strong> at the same time to bring up the <strong>Run </strong>box.</p>
+<p>3. Type in: <strong>mmc</strong> and click <strong>OK</strong>. Click <strong>Yes</strong> if asked if you'd like to allow the app to make changes to your PC.</p>
+<p>4<strong>. </strong>Click the<strong> <strong>File</strong> </strong>menu then click<strong> <strong>Add/Remove Snap-in...</strong><br></strong></p>
+<p>5. In the <strong>Available snap-ins</strong> list on the left, double-click <strong>Certificates</strong>.</p>
+<p>6. In the popup window, select <strong>Computer account</strong>, click <strong>Next</strong>, then click <strong>Finish</strong>.</p>
+<p>7. Click <strong>OK</strong> to close the <strong>Snap-ins</strong> window.</p>
+<p>8. In the center pane of the console window, double-click <strong>Certificates (Local Computer)</strong>.</p>
+<p>9. Double-click <strong>Personal</strong>.</p>
+<p>10. Right click in the center pane, hover the cursor over <strong>All Tasks</strong>, then click <strong>Import...</strong></p>
+<p>11. Click <strong>Next</strong>, then <strong>Browse...</strong></p>
+<p>12. Locate the <strong>goldenfrog-client.p12</strong> file downloaded earlier and click <strong>Open</strong>. If you don't see the file, then locate the file type drop-down next to the file name field and choose <strong>All Files</strong>.</p>
+<p>13. Click <strong>Next</strong>.</p>
+<p>14. Type <strong>goldenfrog</strong> in the <strong>Password</strong> field, then click <strong>Next</strong>.</p>
+<p>15. Select <strong>Automatically select the certificate store based on the type of certificate</strong>, click <strong>Next</strong>, then click <strong>Finish</strong>.</p>
+<p>16. Close the <strong>Console1 window</strong>.</p>
+<p>17. Click <strong>Yes</strong> to save Console1 settings.</p>
+<p>18. The default name is fine, click <strong>Save</strong> again.</p>
+<p>&nbsp;</p>
+<h2>To configure the L2TP/IPsec connection:</h2>
+<p>1. Click on the <strong>Start</strong> menu.</p>
+<p>2. Click on <strong>Settings</strong>.</p>
+<p>3. Click <strong>Network &amp; Internet</strong> from the Settings menu.</p>
+<p>4. Select <strong>VPN</strong> from the left side of the window.</p>
+<p>5. Click <strong>Add a VPN connection</strong>.</p>
+<p>6. Fill out the settings listed in the box below.</p>
+<pre><strong>VPN provider</strong>: Windows (built-in)
+<strong>Connection Name</strong>: VyprVPN
+<strong>Server name or address</strong>: See <a href="https://support.goldenfrog.com/hc/en-us/articles/360011055671-What-are-the-VyprVPN-server-addresses-" target="_blank" rel="noopener">server list</a>
+<strong>VPN type</strong>: L2TP/IPSEC with certificate
+<strong>Type of sign-in info</strong>: User name and password
+<strong>User name (optional)</strong>: Your Golden Frog email address
+<strong>Password (optional)</strong>: Your Golden Frog password
+<strong>Remember my sign-in info</strong>: Checked</pre>
+<p>7. Click <strong>Save</strong>.</p>
+<p>8. You will now see the connection in the <strong>Network &amp; Internet</strong> window.</p>
+<p>9. Click <strong>Network and Sharing Center</strong> under <strong>Related settings</strong>.</p>
+<p>10. In Network and Sharing Center, click <strong>Change adapter settings</strong> on the left side of the window.</p>
+<p>11. Right-click on <strong>VyprVPN </strong>and choose <strong>Properties</strong>.</p>
+<p>12. Navigate to the <strong>Security</strong> tab and for <strong>Data encryption</strong> select: <strong>Maximum strength encryption (disconnect if server declines)</strong>. Click <strong>OK</strong>.</p>
+<p>13. Close the <strong>Network and Sharing Center</strong> window and you will find yourself back in the <strong>VPN</strong> section of <strong>Network and Internet</strong>.</p>
+<p>&nbsp;</p>
+<h2>How to Connect:</h2>
+<p>1. Click on the <strong>Start</strong> menu.</p>
+<p>2. Click on <strong>Settings</strong>.</p>
+<p>3. Click on <strong>Network &amp; Internet</strong> from the Settings menu.</p>
+<p>4. Select <strong>VPN</strong> from the left side of the window.</p>
+<p>5. Click on <strong>VyprVPN</strong> and then click the <strong>Connect</strong> button.</p>
+<p>6. You are now connected to VyprVPN! Click <strong>Disconnect</strong> from this screen at any time to disconnect from the service.</p>
+<p>7.&nbsp;You can check your IP here: <a href="https://www.goldenfrog.website/whatismyipaddress" target="_blank" rel="noopener">https://www.goldenfrog.website/whatismyipaddress</a></p>
+<p>&nbsp;</p>
+<p>If you need any further assistance, please <strong><a href="https://support.goldenfrog.com/hc/en-us/requests/new">contact support</a></strong>.</p>
+    </div>
+<!--Comment out for removal of attachment lists on live articles
+    <div class="article-attachments">
+      <ul class="attachments">
+        
+      </ul>
+    </div>
+-->
+    <footer class="article-footer clearfix">
+      
+        <div class="article-vote">
+          <span class="article-vote-question">Was this article helpful?</span>
+          <div class="article-vote-controls">
+            <a role="button" rel="nofollow" class="article-vote-up" title="Yes" aria-selected="false" data-auth-action="signin" href="https://support.goldenfrog.com/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.goldenfrog.com%2Fhc%2Fen-us%2Farticles%2F360004672911-VyprVPN-L2TP-IPSec-VPN-Setup-for-Windows-10"></a>
+            <a role="button" rel="nofollow" class="article-vote-down" title="No" aria-selected="false" data-auth-action="signin" href="https://support.goldenfrog.com/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.goldenfrog.com%2Fhc%2Fen-us%2Farticles%2F360004672911-VyprVPN-L2TP-IPSec-VPN-Setup-for-Windows-10"></a>
+          </div>
+          <small class="article-vote-count">
+            <span class="article-vote-label">0 out of 0 found this helpful</span>
+          </small>
+        </div>
+      
+      <!--<ul class="share">
+  <li><a href="https://www.facebook.com/share.php?title=VyprVPN+L2TP%2FIPSec+VPN+Setup+for+Windows+10&u=https%3A%2F%2Fsupport.goldenfrog.com%2Fhc%2Fen-us%2Farticles%2F360004672911-VyprVPN-L2TP-IPSec-VPN-Setup-for-Windows-10" class="share-facebook">Facebook</a></li>
+  <li><a href="https://twitter.com/share?lang=en&text=VyprVPN+L2TP%2FIPSec+VPN+Setup+for+Windows+10&url=https%3A%2F%2Fsupport.goldenfrog.com%2Fhc%2Fen-us%2Farticles%2F360004672911-VyprVPN-L2TP-IPSec-VPN-Setup-for-Windows-10" class="share-twitter">Twitter</a></li>
+  <li><a href="https://www.linkedin.com/shareArticle?mini=true&source=Golden+Frog&title=VyprVPN+L2TP%2FIPSec+VPN+Setup+for+Windows+10&url=https%3A%2F%2Fsupport.goldenfrog.com%2Fhc%2Fen-us%2Farticles%2F360004672911-VyprVPN-L2TP-IPSec-VPN-Setup-for-Windows-10" class="share-linkedin">LinkedIn</a></li>
+  <li><a href="https://plus.google.com/share?hl=en-us&url=https%3A%2F%2Fsupport.goldenfrog.com%2Fhc%2Fen-us%2Farticles%2F360004672911-VyprVPN-L2TP-IPSec-VPN-Setup-for-Windows-10" class="share-googleplus">Google+</a></li>
+</ul>
+-->
+    </footer>
+
+    <div class="article-more-questions">
+      Have more questions? <a href="https://support.goldenfrog.com/hc/en-us/requests/new">Submit a request</a>
+    </div>
+
+    <!--<section class="article-comments">-->
+    <!--  <h2>Comments</h2>-->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--</section>-->
+
+  </article>
+
+  <aside class="article-sidebar side-column">
+    <section class="recent-articles"><h3>Recently viewed articles</h3><ul><li><a href="https://support.goldenfrog.com/hc/en-us/articles/360011055671-What-are-the-VyprVPN-server-addresses-">What are the VyprVPN server addresses?</a></li><li><a href="https://support.goldenfrog.com/hc/en-us/articles/360004946872-VyprVPN-L2TP-IPsec-VPN-Setup-for-Android-4-X">VyprVPN L2TP/IPsec VPN Setup for Android 4.X</a></li><li><a href="https://support.goldenfrog.com/hc/en-us/articles/360004675351-VyprVPN-IKEv2-VPN-Setup-for-Windows-10">VyprVPN IKEv2 VPN Setup for Windows 10</a></li><li><a href="https://support.goldenfrog.com/hc/en-us/articles/203814906-VyprVPN-PPTP-VPN-Setup-for-OS-X-10-8-">VyprVPN PPTP VPN Setup for OS X 10.8+</a></li><li><a href="https://support.goldenfrog.com/hc/en-us/articles/207040997-VyprVPN-PPTP-VPN-Setup-for-Windows-10">VyprVPN PPTP VPN Setup for Windows 10</a></li></ul></section>
+    
+  <section class="related-articles">
+    <h3>Related articles</h3>
+    <ul>
+      
+        <li>
+          <a href="https://support.goldenfrog.com/hc/en-us/related/click?data=BAh7CjobZGVzdGluYXRpb25fYXJ0aWNsZV9pZGwrCDfCVNJTADoYcmVmZXJyZXJfYXJ0aWNsZV9pZGwrCI9d89FTADoLbG9jYWxlSSIKZW4tdXMGOgZFVDoIdXJsSSJLL2hjL2VuLXVzL2FydGljbGVzLzM2MDAxMTA1NTY3MS1XaGF0LWFyZS10aGUtVnlwclZQTi1zZXJ2ZXItYWRkcmVzc2VzLQY7CFQ6CXJhbmtpBg%3D%3D--e9e49e90b193b7c5ac1b963f2ec38da6e583119f">What are the VyprVPN server addresses?</a>
+        </li>
+      
+        <li>
+          <a href="https://support.goldenfrog.com/hc/en-us/related/click?data=BAh7CjobZGVzdGluYXRpb25fYXJ0aWNsZV9pZGwrCEBP8tFTADoYcmVmZXJyZXJfYXJ0aWNsZV9pZGwrCI9d89FTADoLbG9jYWxlSSIKZW4tdXMGOgZFVDoIdXJsSSJKL2hjL2VuLXVzL2FydGljbGVzLzM2MDAwNDYwMzcxMi1WeXByVlBOLVBQVFAtVlBOLVNldHVwLWZvci1XaW5kb3dzLTEwBjsIVDoJcmFua2kH--b0af5798b03cac420c79f8b8f26fdc638be1bad3">VyprVPN PPTP VPN Setup for Windows 10</a>
+        </li>
+      
+        <li>
+          <a href="https://support.goldenfrog.com/hc/en-us/related/click?data=BAh7CjobZGVzdGluYXRpb25fYXJ0aWNsZV9pZGwrCBdn89FTADoYcmVmZXJyZXJfYXJ0aWNsZV9pZGwrCI9d89FTADoLbG9jYWxlSSIKZW4tdXMGOgZFVDoIdXJsSSJLL2hjL2VuLXVzL2FydGljbGVzLzM2MDAwNDY3NTM1MS1WeXByVlBOLUlLRXYyLVZQTi1TZXR1cC1mb3ItV2luZG93cy0xMAY7CFQ6CXJhbmtpCA%3D%3D--d38061ae5d13a2634ef82ccf74ceba9cee04ba17">VyprVPN IKEv2 VPN Setup for Windows 10</a>
+        </li>
+      
+        <li>
+          <a href="https://support.goldenfrog.com/hc/en-us/related/click?data=BAh7CjobZGVzdGluYXRpb25fYXJ0aWNsZV9pZGwrCNxY8tFTADoYcmVmZXJyZXJfYXJ0aWNsZV9pZGwrCI9d89FTADoLbG9jYWxlSSIKZW4tdXMGOgZFVDoIdXJsSSJNL2hjL2VuLXVzL2FydGljbGVzLzM2MDAwNDYwNjE3Mi1WeXByVlBOLU9wZW5WUE4tR1VJLVNldHVwLWZvci1XaW5kb3dzLTEwBjsIVDoJcmFua2kJ--6f2f10c7334c9f8cda504b5021353090acfc3f19">VyprVPN OpenVPN GUI Setup for Windows 10</a>
+        </li>
+      
+        <li>
+          <a href="https://support.goldenfrog.com/hc/en-us/related/click?data=BAh7CjobZGVzdGluYXRpb25fYXJ0aWNsZV9pZGwrCPgJUtJTADoYcmVmZXJyZXJfYXJ0aWNsZV9pZGwrCI9d89FTADoLbG9jYWxlSSIKZW4tdXMGOgZFVDoIdXJsSSJOL2hjL2VuLXVzL2FydGljbGVzLzM2MDAxMDg3NzQzMi1XaGljaC1WUE4tcHJvdG9jb2wtYW0tSS11c2luZy1vbi1XaW5kb3dzLQY7CFQ6CXJhbmtpCg%3D%3D--233661eed4188478b11d868ad6cb45bcf6e70adc">Which VPN protocol am I using on Windows?</a>
+        </li>
+      
+    </ul>
+  </section>
+
+
+  </aside>
+
+</div>
+  </main>
+
+  <footer class="footer">
+  <div class="footer-inner">
+    
+  </div>
+</footer>
+
+<!-- Golden Frog: Global Functions -->
+
+<script src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/61e0ad1bd32a267dad47cd1c08505846cb063931.js.下载"></script>
+
+<!-- Golden Frog: Global Variables -->
+<script>
+/* <![CDATA[ */
+/**
+ * Whether the domain of the website is the primary domain
+ */
+window.isPrimaryDomain = (
+  window.location.host.search('goldenfrog.com') > -1 &&
+  window.location.host.search('goldenfrog.company') == -1
+);
+/* ]]> */
+</script>
+
+<!-- Google Adwords -->
+
+
+
+
+<script>
+/* <![CDATA[ */
+if ( window.isPrimaryDomain ) {
+  // FAQ: This code would work in the `<head>`; one reason to NOT put it there:
+  //      1. Putting this code in the `<head>` requires an extra early HTTP request:
+  //        /gf.load-script.js
+  window.addEventListener('load', function loadGoogleAdwords() {
+
+    // Load aync version of Google Adwords conversion script
+    // FAQ: Because we dynamically load the conversion script,
+    //      we must load a version that does NOT use `document.write`.
+    // SEE: https://support.google.com/adwords/answer/6331304
+    window.loadScript('//www.googleadservices.com/pagead/conversion_async.js', {
+      shouldAsync: true,
+      onLoad: function trackGoogleConversion() {
+
+        // Track conversion after script load
+        // FAQ: Because we dynamically load the conversion script,
+        //      we must dynamically track conversion after load.
+        // SEE: https://support.google.com/adwords/answer/6331304
+        window.google_trackConversion({
+          google_conversion_id: 1018201264,
+          google_custom_params: window.google_tag_params,
+          google_remarketing_only: true
+        });
+
+      }
+    });
+
+  });
+}
+/* ]]> */
+</script>
+
+
+
+
+
+
+
+  <!-- / -->
+
+  <script type="text/javascript" src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/en-us-0e52ebc0192643ee8ae55b6ed50b3a3f.js.下载"></script>
+  <script src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/host.js.下载" data-brand-id="360000710792" data-return-to="https://support.goldenfrog.com/hc/en-us/articles/360004672911-VyprVPN-L2TP-IPSec-VPN-Setup-for-Windows-10" data-theme="hc" data-locale="1" data-auth-origin="360000710792,true,true"></script>
+  <script type="text/javascript" src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/zendesk_pci_hc.v4.js.下载"></script>
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"powerhousemanagement","environment":"production","name":"Powerhouse Management Inc"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":"UDM6R33zPu1nCxdrIxM08LppmmCd1M8UFBe9NK/s8jwZ43FU/Dkr09t3oEm/scTXERVanDlQ0g3xzk74MtSQSQ==","shared_csrf_token":null},"settings":{"zopim_enabled":true,"spam_filter_enabled":true},"current_record_id":"360004672911","current_record_url":"/hc/en-us/articles/360004672911-VyprVPN-L2TP-IPSec-VPN-Setup-for-Windows-10","current_record_title":"VyprVPN L2TP/IPSec VPN Setup for Windows 10","search_results_count":null,"current_text_direction":"ltr","current_brand_url":"https://goldenfrog.zendesk.com","current_host_mapping":"support.goldenfrog.com","current_path":"/hc/en-us/articles/360004672911-VyprVPN-L2TP-IPSec-VPN-Setup-for-Windows-10","authentication_domain":"https://powerhousemanagement.zendesk.com","show_autocomplete_breadcrumbs":true,"rollbar_config":{"enabled":true,"endpoint":"https://rollbar-us.zendesk.com/api/1/item/","accessToken":"731a5a953e9a4b7ab6cac9623f50c732","captureUncaught":true,"captureUnhandledRejections":true,"payload":{"environment":"production","client":{"javascript":{"source_map_enabled":true,"code_version":"a13daa9b2040db20262e15bf5cc2ff1c80de03cb","guess_uncaught_frames":true}}}},"user_info_changing_enabled":false,"has_user_profiles_enabled":false,"has_anonymous_kb_voting":false,"has_professional_upsell":false,"has_multi_language_help_center":true,"mobile_device":false,"mobile_site_enabled":false,"show_at_mentions":false,"has_copied_content":false,"embeddables_config":{"embeddables_web_widget":false,"embeddables_connect_ipms":false},"base_domain":"zendesk.com","answer_bot_subdomain":"static","plans_url":"https://support.goldenfrog.com/hc/admin/plan?locale=en-us","manage_content_url":"https://support.goldenfrog.com/hc/en-us","arrange_content_url":"https://support.goldenfrog.com/hc/admin/arrange_contents?locale=en-us","general_settings_url":"https://support.goldenfrog.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://powerhousemanagement.zendesk.com/knowledge/user_segments?brand_id=360000710792","import_articles_url":"https://support.goldenfrog.com/hc/admin/import_articles?locale=en-us","has_community_enabled":false,"has_groups":true,"has_internal_sections":true,"has_organizations":true,"has_tag_restrictions":true,"has_answer_bot_enabled_in_classic":true,"has_answer_bot_web_form_enabled":false,"has_close_the_loop_enabled":false,"billing_url":"/access/return_to?return_to=https://powerhousemanagement.zendesk.com/agent/admin/subscription","has_answer_bot":true,"has_guide_docs_importer":true,"has_guide_permission_groups":false,"answer_bot_management_url":"https://support.goldenfrog.com/hc/admin/answer_bot?locale=en-us","is_account_owner":false,"has_theming_templates":true,"theming_center_url":"https://support.goldenfrog.com/theming","theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-preview","is_preview":false,"permission_groups_url":"https://powerhousemanagement.zendesk.com/knowledge/permissions?brand_id=360000710792","has_guide_user_segments_search":false,"has_guide_user_segments_v2":true,"has_accessible_user_menu":false,"has_alternate_templates":false};
+</script>
+
+  <script src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/hc_enduser-465b986ff5f84c8f12d1b57aaf24212b.js.下载"></script>
+
+  <script type="text/javascript">
+    (function() {
+  var Tracker = {};
+
+  Tracker.track = function(eventName, data) {
+    var url = "https://support.goldenfrog.com/hc/tracking/events?locale=en-us";
+
+    var payload = {
+      "event": eventName,
+      "data": data,
+      "referrer": document.referrer
+    };
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    xhr.send(JSON.stringify(payload));
+  };
+
+    Tracker.track("article_viewed", "BAh7CDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoPYXJ0aWNsZV9pZGwrCI9d89FTADoKX21ldGF7CzoPYWNjb3VudF9pZGkDTtECOhNoZWxwX2NlbnRlcl9pZGwrCORJrtFTADoNYnJhbmRfaWRsKwiI6LbRUwA6DHVzZXJfaWQwOg51c2VyX3JvbGVJIg5hbm9ueW1vdXMGOwZUOwBJIgplbi11cwY7BlQ=--55006c59b804e8ced38e709810acbac739f5bf96");
+})();
+
+  </script>
+
+<div id="designstudio" style="font-size:16px;-webkit-transform:translateZ(0);-moz-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);display:none;z-index:100003;position:fixed;height:32.75em;width:25.25em;right:0;float:right;bottom:0;"><div id="draggable" style="width:calc(100% - 5.9375em);left:0;top:0;position:absolute;height:3em;z-index:13000;margin-top:12px;margin-left:12px;cursor:move;"></div><iframe id="designstudio-iframe" style="-webkit-transform:translateZ(0);-moz-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);display:block;position:absolute;border:none;width:100%;height:100%;" name="designstudio-frame" title="Live Chat Box" src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/saved_resource.html"></iframe></div><div id="designstudio-minimize" style="position:fixed;z-index:999998;display:none;right:0;float:right;bottom:0;"><iframe id="iframe-minimize" style="border:none;display:block;font-size:14px;" name="designstudio-minimize-frame" title="Live Chat Button" scrolling="no" src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/saved_resource(1).html"><div id="minimize-content"><div id="minimize-notify" class=" minimize-notify-right-avatar minimize-notify-bottom"><span id="minimize-notify-counter"></span></div><div id="minimize-avatar-container" class=" right bottom"><img id="minimize-avatar"></div><div id="minimize-svg" class=" right bottom"><div id="svg-container"><svg viewBox="0 0 600 600"><defs><filter id="dropshadow" height="140%"><fegaussianblur in="SourceAlpha" stddeviation="15"></fegaussianblur><feoffset result="offsetblur" dx="10" dy="10"></feoffset><fecomponenttransfer><fefunca type="linear" slope="0.8"></fefunca></fecomponenttransfer><femerge><femergenode></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter></defs><g id="comments-o" class="designstudio-container"><circle class="designstudio-circle" cx="50%" cy="50%" r="260" fill="#3498db" linejoin="round" stroke="#ffffff" stroke-width="0" fill-opacity="1" position="absolute"></circle><path class="designstudio-icon" fill="#ffffff" d="M704 1152q-153 0 -286 -52t-211.5 -141t-78.5 -191q0 -82 53 -158t149 -132l97 -56l-35 -84q34 20 62 39l44 31l53 -10q78 -14 153 -14q153 0 286 52t211.5 141t78.5 191t-78.5 191t-211.5 141t-286 52zM704 1280q191 0 353.5 -68.5t256.5 -186.5t94 -257t-94 -257 t-256.5 -186.5t-353.5 -68.5q-86 0 -176 16q-124 -88 -278 -128q-36 -9 -86 -16h-3q-11 0 -20.5 8t-11.5 21q-1 3 -1 6.5t0.5 6.5t2 6l2.5 5t3.5 5.5t4 5t4.5 5t4 4.5q5 6 23 25t26 29.5t22.5 29t25 38.5t20.5 44q-124 72 -195 177t-71 224q0 139 94 257t256.5 186.5 t353.5 68.5zM1526 111q10 -24 20.5 -44t25 -38.5t22.5 -29t26 -29.5t23 -25q1 -1 4 -4.5t4.5 -5t4 -5t3.5 -5.5l2.5 -5t2 -6t0.5 -6.5t-1 -6.5q-3 -14 -13 -22t-22 -7q-50 7 -86 16q-154 40 -278 128q-90 -16 -176 -16q-271 0 -472 132q58 -4 88 -4q161 0 309 45t264 129 q125 92 192 212t67 254q0 77 -23 152q129 -71 204 -178t75 -230q0 -120 -71 -224.5t-195 -176.5z" transform="scale(.195, -.195) translate(600, -2000)"></path></g></svg></div></div><div id="minimize-messages" class=" message-left bottom"></div></div></iframe></div><style>.designstudio-animated {-webkit-animation-duration: .5s;animation-duration: .5s;-webkit-animation-fill-mode: both;animation-fill-mode: both;}@keyframes designstudio-fadeOut {from {opacity: 1;}to {opacity: 0;}}.designstudio-fadeOut {animation-name: designstudio-fadeOut;}@-webkit-keyframes designstudio-fadeInUp {from {opacity: 0;-webkit-transform: translate3d(0, 100%, 0);transform: translate3d(0, 100%, 0);}to {opacity: 1;-webkit-transform: none;transform: none;}}@keyframes designstudio-fadeInUp {from {opacity: 0;-webkit-transform: translate3d(0, 100%, 0);transform: translate3d(0, 100%, 0);}to {opacity: 1;-webkit-transform: none;transform: none;}}.designstudio-fadeInUp {-webkit-animation-name: designstudio-fadeInUp;animation-name: designstudio-fadeInUp;}@-webkit-keyframes designstudio-fadeInDown {from {opacity: 0;-webkit-transform: translate3d(0, -100%, 0);transform: translate3d(0, -100%, 0);}to {opacity: 1;-webkit-transform: none;transform: none;}}@keyframes designstudio-fadeInDown {from {opacity: 0;-webkit-transform: translate3d(0, -100%, 0);transform: translate3d(0, -100%, 0);}to {opacity: 1;-webkit-transform: none;transform: none;}}.designstudio-fadeInDown {-webkit-animation-name: designstudio-fadeInDown;animation-name: designstudio-fadeInDown;}@-webkit-keyframes designstudio-fadeInLeft {from {opacity: 0;-webkit-transform: translate3d(-100%, 0, 0);transform: translate3d(-100%, 0, 0);}to {opacity: 1;-webkit-transform: none;transform: none;}}@keyframes designstudio-fadeInLeft {from {opacity: 0;-webkit-transform: translate3d(-100%, 0, 0);transform: translate3d(-100%, 0, 0);}to {opacity: 1;-webkit-transform: none;transform: none;}}.designstudio-fadeInLeft {-webkit-animation-name: designstudio-fadeInLeft;animation-name: designstudio-fadeInLeft;}@-webkit-keyframes designstudio-fadeInRight {from {opacity: 0;-webkit-transform: translate3d(100%, 0, 0);transform: translate3d(100%, 0, 0);}to {opacity: 1;-webkit-transform: none;transform: none;}}@keyframes designstudio-fadeInRight {from {opacity: 0;-webkit-transform: translate3d(100%, 0, 0);transform: translate3d(100%, 0, 0);}to {opacity: 1;-webkit-transform: none;transform: none;}}.designstudio-fadeInRight {-webkit-animation-name: designstudio-fadeInRight;animation-name: designstudio-fadeInRight;}@-webkit-keyframes designstudio-fadeOutUp {from {opacity: 1;}to {opacity: 0;-webkit-transform: translate3d(0, -100%, 0);transform: translate3d(0, -100%, 0);}}@keyframes designstudio-fadeOutUp {from {opacity: 1;}to {opacity: 0;-webkit-transform: translate3d(0, -100%, 0);transform: translate3d(0, -100%, 0);}}.designstudio-fadeOutUp {-webkit-animation-name: designstudio-fadeOutUp;animation-name: designstudio-fadeOutUp;}@-webkit-keyframes designstudio-fadeOutDown {from {opacity: 1;}to {opacity: 0;-webkit-transform: translate3d(0, 100%, 0);transform: translate3d(0, 100%, 0);}}@keyframes designstudio-fadeOutDown {from {opacity: 1; }to {opacity: 0;-webkit-transform: translate3d(0, 100%, 0);transform: translate3d(0, 100%, 0);}}.designstudio-fadeOutDown {-webkit-animation-name: designstudio-fadeOutDown;animation-name: designstudio-fadeOutDown;}@-webkit-keyframes designstudio-fadeOutLeft {from {opacity: 1;}to {opacity: 0;-webkit-transform: translate3d(-100%, 0, 0);transform: translate3d(-100%, 0, 0);}}@keyframes designstudio-fadeOutLeft {from {opacity: 1;}to {opacity: 0;-webkit-transform: translate3d(-100%, 0, 0);transform: translate3d(-100%, 0, 0);}}.designstudio-fadeOutLeft {-webkit-animation-name: designstudio-fadeOutLeft;animation-name: designstudio-fadeOutLeft;}@-webkit-keyframes designstudio-fadeOutRight {from {opacity: 1;}to {opacity: 0;-webkit-transform: translate3d(100%, 0, 0);transform: translate3d(100%, 0, 0);}}@keyframes designstudio-fadeOutRight {from {opacity: 1;}to {opacity: 0;-webkit-transform: translate3d(100%, 0, 0);transform: translate3d(100%, 0, 0);}}.designstudio-fadeOutRight {-webkit-animation-name: designstudio-fadeOutRight;animation-name: designstudio-fadeOutRight;}</style><div><iframe data-reactroot="" id="automaticAnswers" class="zEWidget-automaticAnswers" tabindex="-1" style="border: none; background: transparent; transform: translateZ(0px); position: fixed; opacity: 0; bottom: 0px; margin: 0px 6px 6px 0px; z-index: 2147483647; right: 0px; height: 188px; width: 410px; transition-property: none; transition-timing-function: unset; top: -9999px;" src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/saved_resource(2).html"></iframe></div><div id="designstudio-button" style="position: fixed; z-index: 999998; font-size: 14px; bottom: 0px; right: 5%;"><iframe id="iframe-designstudio-button" style="border:none;display:block;" name="designstudio-button-frame" title="Live Chat Button" scrolling="no" height="43" width="370" src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/saved_resource(3).html"></iframe></div><script src="./VyprVPN L2TP_IPSec VPN Setup for Windows 10 – Golden Frog Support_files/f(1).txt" async=""></script></body></html>
