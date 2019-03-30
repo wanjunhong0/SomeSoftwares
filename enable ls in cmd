@@ -1,0 +1,1 @@
+echo @dir %* > %systemroot%\system32\ls.bat
