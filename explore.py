@@ -36,6 +36,7 @@ if not os.path.isfile(file_path):
         dist[i] = 0
     df['dist'] = dist
 
+
     # output
     df.to_csv(file_path, index=False)
 
@@ -52,16 +53,34 @@ df['sort_plate'] = df.device_index.map(sort_plate_map)
 df = df.sort_values(by=['sort_plate', 'gps_time'])
 df = df.reset_index(drop=True)
 
+# calculate time gap
+time = pd.to_datetime(df[df.dist != 0].gps_time)
+time_gap = [0] * len(time)
+for i, j in tqdm(enumerate(range(len(time)), list(time.index))):
+    if j == 0:
+        time_gap[i] = 0
+    else:
+        time_gap[i] = (time.iloc[j] - time.iloc[j - 1]).total_seconds()
+# zero at each start of every plate number
+for i in separate_index:
+    time_gap[i] = 0
+df['time_gap'] = time_gap
+
+#
+
+
+
+
 
 # google map
 if not os.path.isdir('./plot'):
+    os.mkdir('./plot')
     for i in tqdm(df.device_index.unique()):
         gmap = gmplot.GoogleMapPlotter(df.latitude.mean(), df.longitude.mean(), 13,
                                        apikey='AIzaSyBOX2s8xecA0Q6JCsJzGqb4pzfEy4H1ypg')
         gmap.heatmap(df[df.device_index == i].latitude, df[df.device_index == i].longitude, opacity=0.9)
-        output_path = r"D:\Code\Traffic\plot\\" + str(sort_plate_map[i]) + i + '.html'
+        output_path = './plot' + str(sort_plate_map[i]) + i + '.html'
         gmap.draw(output_path)
-
 
 
 
