@@ -16,19 +16,28 @@ def get_lat_lon(coordinates, route=False):
 
 
 # get snap to road index
-def get_iteration(n):
-    i = int((n - 1) / 100) + 1
-    if ((n - 1)/ (i * 100 - i)) > 1:
-        i = i + 1
-    return i
-
+# def get_iteration(n):
+#     i = int((n - 1) / 99) + 1
+#     if ((n - 1) / (i * 100 - i)) > 1:
+#         i = i + 1
+#     return i
+#
+#
+# def snap_index(n):
+#     index = []
+#     i = get_iteration(n)
+#     for j in range(1, i + 1):
+#         if j == i:
+#             index.append(n - 1)
+#         else:
+#             index.append(100 * j - j)
+#     return sorted(index)
 
 def snap_index(n):
     index = []
-    i = get_iteration(n)
-    for j in range(1, i + 1):
-        if j == i:
+    for i in range(int((n - 1) / 99) + 1):
+        if i == int((n - 1) / 99):
             index.append(n - 1)
         else:
-            index.append(100 * j - j)
+            index.append(99 * (i + 1))
     return sorted(index)
