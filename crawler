@@ -1,0 +1,32 @@
+import pandas as pd
+import numpy as np
+from tqdm import tqdm
+import re
+import requests
+import json
+import time
+
+
+# read data
+movies = pd.read_csv('Data/ml-1m/movies.dat', header=None, sep='::', engine='python',
+                     names=['movieID', 'title', 'genres'], encoding='cp1252')
+
+# read cookies
+f = open(r'cookies.txt', 'r')
+cookies = {}
+for line in f.read().split(';'):
+    name, value = line.strip().split('=', 1)
+    cookies[name] = value
+
+# crawler
+movieID = movies['movieID'].tolist()
+r = {}
+for i in tqdm(movieID):
+    url = 'https://movielens.org/api/movies/' + str(i)
+    response = requests.get(url, cookies=cookies)
+    r[i] = json.loads(response.text)
+    time.sleep(10)
+
+
+
+
