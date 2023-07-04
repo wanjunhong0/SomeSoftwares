@@ -6,7 +6,7 @@
 
 ![SSH Architecture](https://github.com/microsoft/vscode-docs/blob/main/docs/remote/images/ssh/architecture-ssh.png)
 
-**Note**: 官方插件文档 [SSH tutorial](/docs/remote/ssh-tutorial.md)
+[插件官方文档]([/docs/remote/ssh-tutorial.md](https://code.visualstudio.com/docs/remote/ssh-tutorial))
 
 ## **VS Code Remote SSH** 优点
 
