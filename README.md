@@ -1,12 +1,27 @@
-# 使用 VS Code Remote SSH 远程开发
+# 预研方向服务器远程开发指南
+
+## 简介
+在我们日常工作中，经常性的需要通过SSH的协议，远程连接服务器进行算法的开发测试等活动。
+目前绝大多数关于远程开发的文档，包括公司内部，网上的资料等都主要还是面向开发以及测试方向的工作编写的。
+而预研方向的工作与开发或者测试的工作有显著的区别，导致一定程度上上诉的资料并不适用预研的场景。
+
+- 开发和测试方向工作主要重在远程服务器上部署运行相关程序；而预研工作则是主要重在利用远程服务器的硬件资源加速、并行化、和多进程的能力
+- 开发和测试方向工作侧重于环境的配置和兼容性；而预研工作则不太需要关注这些
+- 开发和测试方向工作的指标是程序的成功运行，所以一般的编程语言的log反馈就能满足其需求；而预研工作的指标是算法的性能指标，一般的log可能无法满足其全部需求，需要debug等工具来辅助
+
+目前SSH远程开发的工具的使用流行度如下图，由vs code studio占据了一半以上的份额，并且经我使用，发现其确实优于其他几个选项，所以接下来我将详细介绍其功能和使用方法。
+
+![stats](https://github.com/wanjunhong0/SomeSoftwares/blob/master/stats.png)
+
 
  **Visual Studio Code Remote - SSH**
 是一款基于VS Code的插件允许你在任何远程机器、虚拟机或容器上打开一个远程文件夹，并充分利用 VS Code IDE的功能。连接到远程服务器，你就可以与远程文件系统上任何位置的文件和文件夹进行交互。因为插件直接在远程机器上运行命令和其他扩展，因此无需在本地机器上放置源代码，也不吃本机的配置性能（适合我们无盘机远程服务器开发的特性）。
-使用VS Code远程开发可以提供本地质量的开发体验——包括IDE界面、代码导航、调试和Debug——无论您的代码存放在哪里。
+使用VS Code远程开发可以提供类似于本地质量的开发体验，包括IDE界面、代码导航、调试和Debug。
 
 ![SSH Architecture](https://github.com/microsoft/vscode-docs/blob/main/docs/remote/images/ssh/architecture-ssh.png)
 
-[插件官方文档]([/docs/remote/ssh-tutorial.md](https://code.visualstudio.com/docs/remote/ssh-tutorial))
+[插件官方文档](https://code.visualstudio.com/docs/remote/ssh-tutorial)
+
 
 ## **VS Code Remote SSH** 优点
 
@@ -16,7 +31,7 @@
 - **VS Code** 本体小巧，不吃本机配置，运行速度快
 - **VS Code** 是近来年最受欢迎的IDE
 
-![stats](vs-code-stats.png)
+
 
 ### 系统要求
 
