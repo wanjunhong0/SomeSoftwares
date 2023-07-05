@@ -1,6 +1,7 @@
 # 预研方向服务器远程开发指南
 
 ## 简介
+
 在我们日常工作中，经常性的需要通过SSH的协议，远程连接服务器进行算法的开发测试等活动。
 目前绝大多数关于远程开发的文档，包括公司内部，网上的资料等都主要还是面向开发以及测试方向的工作编写的。
 而预研方向的工作与开发或者测试的工作有显著的区别，导致一定程度上上诉的资料并不适用预研的场景。
@@ -15,15 +16,15 @@
     - 如**Putty**或者**Xshell**的软件远程SSH shell只能返回Terminal界面，无法满足现在复杂的开发需求
     - **vim**等基础的文本编辑器，只能提供基本的编辑能力，没有代码纠错和自动补全等功能
     - **VS Code Remote SSH**统一了分离的SSH远程工具和开发所需的IDE
-    - 
+
 - 对比Python开发常用的**Pycharm**
- - **Pycharm**等IDE虽然也具备远程功能，但是在能本机编辑，实时上传调试；而**VS Code Remote SSH**可以直接在远程主机上编辑调试
- - **Pycharm**远程功能是需要付费的；而**VS Code Remote SSH**是免费开源的软件
- - **Pycharm**软件本体较大，加载速度较慢；而**VS Code Remote SSH**本体小巧，不吃本机配置，运行速度快
-   
+    - **Pycharm**等IDE虽然也具备远程功能，但是在能本机编辑，实时上传调试；而**VS Code Remote SSH**可以直接在远程主机上编辑调试
+    - **Pycharm**远程功能是需要付费的；而**VS Code Remote SSH**是免费开源的软件
+    - **Pycharm**软件本体较大，加载速度较慢；而**VS Code Remote SSH**本体小巧，不吃本机配置，运行速度快
+
 ![stats](https://github.com/wanjunhong0/SomeSoftwares/blob/master/stats.png)
 
-## **VS Code Remote SSH** 
+## **VS Code Remote SSH**
 
  **Visual Studio Code Remote - SSH**
 是一款基于VS Code的插件允许你在任何远程机器、虚拟机或容器上打开一个远程文件夹，并充分利用 VS Code IDE的功能。连接到远程服务器，你就可以与远程文件系统上任何位置的文件和文件夹进行交互。因为插件直接在远程机器上运行命令和其他扩展，因此无需在本地机器上放置源代码，也不吃本机的配置性能（适合我们无盘机远程服务器开发的特性）。
@@ -33,12 +34,11 @@
 
 [插件官方文档](https://code.visualstudio.com/docs/remote/ssh-tutorial)
 
-
 ### 系统要求
 
 本机：需要安装兼容[**OpenSSH**](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client)的SSH客户端
 
-远程SSH主机: 
+远程SSH主机:
 
 - x86_64 Debian 8+, Ubuntu 16.04+, CentOS / RHEL 7+
 - ARMv7l (AArch32) Raspberry Pi OS  Stretch/9+ (32-bit)
@@ -69,8 +69,6 @@
 
     ![Listen on socket VS Code setting](https://github.com/microsoft/vscode-docs/blob/main/docs/remote/images/ssh/ssh-listen-on-socket.png)
 
-
-
 #### 连接到远程主机
 
 要首次连接到远程主机，请执行以下步骤：
@@ -92,19 +90,18 @@
 4. 之后 VS Code 将连接到 SSH 服务器并自行设置。VS Code 将使用进度通知最新状态，可以在 `Remote - SSH` 输出通道中看到详细的日志。
 
     > 连接挂起或失败？有关解决常见问题的信息，请参阅 [故障排除提示]([/docs/remote/troubleshooting.md#troubleshooting-hanging-or-failing-connections](https://code.visualstudio.com/docs/remote/troubleshooting#_troubleshooting-hanging-or-failing-connections))
-    
+
     > 如果看到有关 SSH 文件权限的错误，请参阅 [修复 SSH 文件权限错误]([/docs/remote/troubleshooting.md#fixing-ssh-file-permission-errors](https://code.visualstudio.com/docs/remote/troubleshooting#_fixing-ssh-file-permission-errors))
 
-6. 连接上后，将处于一个空白的窗口中。你可以参考状态栏来查看您连接到的主机。
+5. 连接上后，将处于一个空白的窗口中。你可以参考状态栏来查看您连接到的主机。
 
     单击状态栏项目将在您连接时提供远程命令列表。
 
-7. 然后，可以像在本地一样使用 **File > Open...** 或者 **File > Open Workspace...** 打开远程计算机上的任何文件夹或工作区。
+6. 然后，可以像在本地一样使用 **File > Open...** 或者 **File > Open Workspace...** 打开远程计算机上的任何文件夹或工作区。
 
 从这里，你可以在远程主机时使用的任何扩展包并开始编辑。
 
 **注意** 在 ARMv7l / ARMv8l `glibc` SSH 主机上，某些扩展包可能无法工作，因为扩展包中包含 x86 编译的本机代码。
-
 
 #### 在 Docker 中打开远程 SSH 主机上的文件夹
 
@@ -159,7 +156,6 @@ VS Code 在以下两个位置之一运行扩展：本地在 UI / 客户端，或
 
 ![Disabled Extensions w/Install Button](https://github.com/microsoft/vscode-docs/blob/main/docs/remote/images/ssh/ssh-disabled-extensions.png)
 
-
 如果你希望在任何 SSH 主机上始终安装一些扩展，可以使用 `remote.SSH.defaultExtensions` property in `settings.json`。 例如，如果想安装 [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) 和 [Resource Monitor](https://marketplace.visualstudio.com/items?itemName=mutantdino.resourcemonitor) 扩展包, 请指定它们的扩展包 ID，如下所示:
 
 ```json
@@ -176,7 +172,6 @@ VS Code 在以下两个位置之一运行扩展：本地在 UI / 客户端，或
 #### 临时转发端口
 
 连接到主机后，如果你想在会话期间 **temporarily forward** 到新端口，请从命令面板(`kbstyle(F1)`, `kb(workbench.action.showCommands)`) 中选择 **Forward a Port** 或单击中的转发新端口图标从活动栏中选择 **Remote Explorer**。
-
 
 系统会要求输入要转发的端口，你可以为其命名。
 
